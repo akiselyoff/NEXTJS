@@ -1,32 +1,12 @@
-import Link from "next/link";
+import MainContainer from "../components/MainContainer/MainContainer";
 
 const Index = () => {
   return (
-    <>
+    <MainContainer keywords={"Main keywords"}>
       <div>
-        <nav className="nav">
-          <Link href="/" className="link">
-            Main
-          </Link>
-          <Link href="/users" className="link">
-            Users
-          </Link>
-        </nav>
         <h1>Main page</h1>
-        <style jsx>{`
-          .nav {
-            background: gray;
-            padding: 15px;
-          }
-          .link {
-            text-decoration: none;
-            color: blue;
-            font-size: 20px;
-            margin: 10px;
-          }
-        `}</style>
       </div>
-    </>
+    </MainContainer>
   );
 };
 

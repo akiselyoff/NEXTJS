@@ -1,8 +1,9 @@
 import Link from "next/link";
+import MainContainer from "../components/MainContainer/MainContainer";
 
 const Users = ({ users }) => {
   return (
-    <div>
+    <MainContainer keywords={"Users keywords"}>
       <h1>Users page</h1>
       <p>List of users</p>
       <ul>
@@ -12,7 +13,7 @@ const Users = ({ users }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </MainContainer>
   );
 };
 
